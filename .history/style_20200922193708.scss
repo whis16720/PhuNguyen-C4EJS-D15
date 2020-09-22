@@ -1,0 +1,13 @@
+.game {
+	font-family: "Poppins", sans-serif;
+	line-height: 1.4;
+	width: 470px;
+	margin: auto;
+	background-color: #d6ffff;
+	&__name {
+		text-align: center;
+		font-size: 50px;
+		background-color: #b71a1b;
+		color: white;
+	}
+}

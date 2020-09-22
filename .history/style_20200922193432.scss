@@ -1,0 +1,15 @@
+html {
+	font-size: 62.5%; // 1rem = 10px
+}
+.game {
+	font-family: "Poppins", sans-serif;
+	line-height: 1.4;
+	width: 500px;
+	h1
+	margin: auto;
+	background-color: #d6ffff;
+	&__name {
+		text-align: center;
+		font-size: 3rem;
+	}
+}
