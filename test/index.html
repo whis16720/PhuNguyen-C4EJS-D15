@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+ 
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <script>
+    //   //Bai 1
+    //   const findOppositeNumber = (n, inputNumber) => {
+    //     return (inputNumber + n / 2) % n;
+    //   };
+      //Bai 2
+
+      //Cách 1
+    //   const merge2String = (s1, s2) => {
+    //     let s = "";
+    //     for (let i = 0; i < s1.length; i++) {
+    //       if (s1[i] && s2[i]) {
+    //         s += s1[i] + s2[i];
+    //       }
+    //     }
+    //     let d = s1.length - s2.length;
+    //     if (d === 0) {
+    //       return s;
+    //     }
+    //     return d > 0
+    //       ? s + s1.substring(s1.length - d)
+    //       : s + s2.substring(s2.length + d);
+    //   };
+    //   //Cách 2
+    //   const merge2String = (s1, s2) => {
+    //     let s = "";
+    //     for (let i = 0; i < Math.max(s1.length, s2.length); i++) {
+    //       s += s1.charAt(i) || "";
+    //       s += s2.charAt(i) || "";
+    //     }
+    //     return s;
+    //   };
+    //   //Cách 3
+      const merge2String = (s1, s2) => {
+        let i,
+          s = "";
+        for (i = 0; i < Math.min(s1.length, s2.length); i++) {
+          s += s1[i] + s2[i];
+        }
+        return s + s1.slice(i) + s2.slice(i);
+      };
+    </script>
+   <div class="wrapper">
+    <div class="game">
+        <div class="game__title">
+            <h1>Lucky Number</h1>
+        </div>
+        <div class="game__content">
+            <p>Dự đoán con số của bạn nằm trong khoảng từ 1 tới 10</p>
+            <div class="game__input">
+                <input class="game__number" id="number" type="text" placeholder="Nhập số bạn dự đoán">
+                <button id="btn" onclick="luckyNumber()">Quay số</button>
+            </div>
+            <p id="result"></p>
+        </div>
+    </div>
+</div>
+  </body>
+</html>

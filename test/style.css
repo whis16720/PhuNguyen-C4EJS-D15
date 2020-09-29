@@ -1,0 +1,70 @@
+:root {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-image: url(https://www.aman.com/sites/default/files/amanpulo-philippines-pamalican-island_high-res_23585-web.jpg);
+    background-position: center center;
+    background-size: cover;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    width: 50%;
+    height: 35%;
+    border: 1px solid black;
+
+}
+
+.game__title h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+}
+
+.game__content p {
+    text-align: center;
+    font-size: 150%;
+    color: black;
+}
+
+.game__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__number{
+    outline: none;
+    border: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 5px;
+    width: 65%;
+    border-radius: 5px;
+}
+
+#btn {
+    outline: none;
+    display: inline;
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 20%;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#result {
+    text-align: center;
+}
